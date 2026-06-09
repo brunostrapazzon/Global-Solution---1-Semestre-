@@ -1,0 +1,44 @@
+{
+  "missao": {
+    "nome": "ARES-VII",
+    "descricao": "Missao experimental em orbita marciana",
+    "ciclo_atual": "Ciclo 6 / Dia 3",
+    "base_operacional": "Centro de Controle Terra"
+  },
+  "modulos": [
+    {"nome": "suporte_vida",  "status": 1, "ultima_verificacao": "08:00"},
+    {"nome": "energia",       "status": 1, "ultima_verificacao": "08:05"},
+    {"nome": "comunicacao",   "status": 1, "ultima_verificacao": "08:10"},
+    {"nome": "habitat",       "status": 1, "ultima_verificacao": "08:15"},
+    {"nome": "laboratorio",   "status": 0, "ultima_verificacao": "07:30"},
+    {"nome": "armazenamento", "status": 1, "ultima_verificacao": "08:20"}
+  ],
+  "energia": [
+    {"horario": "02:00", "geracao_solar": 28.5, "geracao_eolica": 12.0, "consumo": 65.0, "reserva_pct": 72.0},
+    {"horario": "04:00", "geracao_solar":  0.0, "geracao_eolica":  8.5, "consumo": 58.0, "reserva_pct": 65.0},
+    {"horario": "06:00", "geracao_solar": 15.0, "geracao_eolica": 10.0, "consumo": 70.0, "reserva_pct": 55.0},
+    {"horario": "08:00", "geracao_solar": 35.0, "geracao_eolica": 14.0, "consumo": 82.0, "reserva_pct": 45.0},
+    {"horario": "10:00", "geracao_solar": 40.0, "geracao_eolica":  9.0, "consumo": 88.0, "reserva_pct": 38.0},
+    {"horario": "12:00", "geracao_solar": 42.0, "geracao_eolica": 11.0, "consumo": 95.0, "reserva_pct": 32.0}
+  ],
+  "ambiental": [
+    {"horario": "02:00", "temperatura_ext": -45.0, "radiacao": 35.0, "qualidade_com": 85.0, "vento": 45.0},
+    {"horario": "04:00", "temperatura_ext": -48.0, "radiacao": 38.0, "qualidade_com": 82.0, "vento": 52.0},
+    {"horario": "06:00", "temperatura_ext": -42.0, "radiacao": 52.0, "qualidade_com": 60.0, "vento": 78.0},
+    {"horario": "08:00", "temperatura_ext": -38.0, "radiacao": 65.0, "qualidade_com": 42.0, "vento": 95.0},
+    {"horario": "10:00", "temperatura_ext": -35.0, "radiacao": 72.0, "qualidade_com": 28.0, "vento": 115.0},
+    {"horario": "12:00", "temperatura_ext": -33.0, "radiacao": 78.0, "qualidade_com": 15.0, "vento": 130.0}
+  ],
+  "log": [
+    {"timestamp": "01:30", "tipo": "INFO",    "mensagem": "Sistema ARES-VII inicializado. Todos os modulos em verificacao."},
+    {"timestamp": "03:45", "tipo": "ALERTA",  "mensagem": "Queda na geracao solar detectada. Modo noturno ativado."},
+    {"timestamp": "05:20", "tipo": "ALERTA",  "mensagem": "Aumento de radiacao detectado. Monitoramento intensificado."},
+    {"timestamp": "06:15", "tipo": "CRITICO", "mensagem": "Falha no modulo de laboratorio. Sistema tentando reinicializacao."},
+    {"timestamp": "06:30", "tipo": "INFO",    "mensagem": "Tentativa de reinicializacao do laboratorio - FALHOU."},
+    {"timestamp": "07:00", "tipo": "ALERTA",  "mensagem": "Comunicacao degradada. Tempestade magnetica em andamento."},
+    {"timestamp": "09:30", "tipo": "CRITICO", "mensagem": "Reserva energetica abaixo de 40%. Protocolo de economia iniciado."},
+    {"timestamp": "11:00", "tipo": "CRITICO", "mensagem": "Radiacao acima do limite seguro. Astronautas instruidos ao habitat."},
+    {"timestamp": "11:45", "tipo": "ALERTA",  "mensagem": "Vento extremo detectado. Paineis solares em posicao de seguranca."},
+    {"timestamp": "12:00", "tipo": "CRITICO", "mensagem": "INCONSISTENCIA: Modulo comunicacao reporta OK, mas sinal e de 15%."}
+  ]
+}
